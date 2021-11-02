@@ -40,4 +40,3 @@ time.sleep(3)
 # 返回到上一个页面
 # driver.back()
 driver.quit()
-print("ceshi")
