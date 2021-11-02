@@ -1,6 +1,6 @@
 # GAMMA2用户中心登录模块
 import time
-
+from appium.webdriver.common.touch_action import TouchAction
 from appium import webdriver
 # def environment():
 desired_caps = {}
@@ -19,7 +19,6 @@ driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",desired_caps)
 
 # 隐式等待五秒
 driver.implicitly_wait(5)
-from appium.webdriver.common.touch_action import TouchAction
 # 找到用户名输入框并且点击
 driver.find_element_by_xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.LinearLayout").click()
 # 输入用户名
@@ -40,4 +39,3 @@ time.sleep(3)
 # 返回到上一个页面
 # driver.back()
 driver.quit()
-print(1)
