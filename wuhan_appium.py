@@ -1,6 +1,6 @@
 import time
-
 from appium import webdriver
+
 
 desired_caps = {}
 # 跳过一些安装和权限的设置，可以大大提升脚本执行时间
