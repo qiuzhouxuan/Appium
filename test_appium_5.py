@@ -36,7 +36,26 @@ class TestDW():
         self.driver.find_element_by_xpath("//*[@resource-id='com.xueqiu.android:id/name'and@text='阿里巴巴']").click()
         current_price= float(self.driver.find_element_by_id("com.xueqiu.android:id/current_price").text)
         assert current_price>900
-
 if __name__ == '__main__':
     pytest.main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

@@ -6,6 +6,7 @@
 5，向搜索框输入：alibaba
 6,判断【阿里巴巴】是否可见
 7，如果可见，打印“搜索成功”，如果不可见，打印【搜索失败】
+
 """
 from appium import webdriver
 import pytest
